@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import { ReactComponent as MoonLogo } from "../../assets/logo.svg";
 
-import "./Navgiation.scss";
+import "./Navigation.scss";
 
 const Navigation = () => {
   return (
@@ -15,6 +15,9 @@ const Navigation = () => {
         <div className='nav-links-container'>
           <Link to='/' className='nav-link'>
             Home
+          </Link>
+          <Link to='/sign-in' className='nav-link'>
+            Sign In
           </Link>
         </div>
       </div>
