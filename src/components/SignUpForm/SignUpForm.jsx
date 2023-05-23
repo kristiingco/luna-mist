@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import {
-  CreateAuthUserWithEmailAndPassword,
+  createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
 } from "../../utils/Firebase";
 
@@ -35,7 +35,7 @@ const SignUpForm = () => {
     }
 
     try {
-      const { user } = await CreateAuthUserWithEmailAndPassword(
+      const { user } = await createAuthUserWithEmailAndPassword(
         email,
         password
       );
