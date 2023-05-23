@@ -6,6 +6,9 @@ import {
 } from "../../utils/Firebase";
 
 import FormInput from "../FormInput/FormInput";
+import Button from "../Button/Button";
+
+import "./SignUpForm.scss";
 
 const defaultFormFields = {
   displayName: "",
@@ -54,8 +57,9 @@ const SignUpForm = () => {
   };
 
   return (
-    <div>
-      <h1>Sign up with your email and password</h1>
+    <div className='sign-up-container'>
+      <h2>Don't have an account?</h2>
+      <span>Sign up with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
           label='Display Name'
@@ -90,7 +94,9 @@ const SignUpForm = () => {
           value={confirmPassword}
         />
 
-        <button type='submit'>Sign Up</button>
+        <Button buttonType='google' type='submit'>
+          Sign Up
+        </Button>
       </form>
     </div>
   );
