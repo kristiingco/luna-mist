@@ -1,24 +1,36 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 
+import { UserContext } from "../../context/UserContext";
 import { ReactComponent as MoonLogo } from "../../assets/logo.svg";
+import { signOutUser } from "../../utils/Firebase";
 
 import "./Navigation.scss";
 
 const Navigation = () => {
+  const { currentUser, setCurrentUser } = useContext(UserContext);
+
+  const signOutHandler = async () => {
+    await signOutUser();
+    setCurrentUser(null);
+  };
+
   return (
     <Fragment>
       <div className='navigation'>
-        <Link to='/' className='logo-container'>
+        <Link className='logo-container' to='/'>
           <MoonLogo className='logo' />
         </Link>
         <div className='nav-links-container'>
-          <Link to='/' className='nav-link'>
-            Home
-          </Link>
-          <Link to='/auth' className='nav-link'>
-            Sign In
-          </Link>
+          {currentUser ? (
+            <span className='nav-link' onClick={signOutHandler}>
+              SIGN OUT
+            </span>
+          ) : (
+            <Link className='nav-link' to='/auth'>
+              SIGN IN
+            </Link>
+          )}
         </div>
       </div>
       <Outlet />
