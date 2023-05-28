@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Innisfree Volcanic Pore Cleansing Form",
+    "imageUrl": "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/10/20100013/7e8fdd78809612864329_1-560x560.jpeg?tr=w-400",
+    "price": 13
+  },
+  {
+    "id": 2,
+    "name": "Dear, Klairs Rich Moist Foaming Cleanser",
+    "imageUrl": "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/10/20100020/rich-moist-foaming-cleanser-3-478x560.jpeg?tr=w-400",
+    "price": 28
+  },
+  {
+    "id": 3,
+    "name": "The Face Shop Rice Water Bright Foaming Cleanser",
+    "imageUrl": "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/10/20100027/6197e9a1-1111-4f00-84cd-436466eecc481646300300655-the-face-shop-rice-water-bright-cleansing-foam-100ml-5771646-1-420x560.jpeg?tr=w-400",
+    "price": 10
+  }
+]

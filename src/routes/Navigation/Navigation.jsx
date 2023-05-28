@@ -21,6 +21,9 @@ const Navigation = () => {
           <MoonLogo className='logo' />
         </Link>
         <div className='nav-links-container'>
+          <Link className='nav-link' to='/shop'>
+            SHOP
+          </Link>
           {currentUser ? (
             <span className='nav-link' onClick={signOutHandler}>
               SIGN OUT
