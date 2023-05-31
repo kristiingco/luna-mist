@@ -6,6 +6,8 @@ import { ReactComponent as MoonLogo } from "../../assets/logo.svg";
 import { signOutUser } from "../../utils/Firebase";
 
 import "./Navigation.scss";
+import CartIcon from "../../components/CartIcon/CartIcon";
+import CartDropdown from "../../components/CartDropdown/CartDropdown";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
@@ -33,7 +35,9 @@ const Navigation = () => {
               SIGN IN
             </Link>
           )}
+          <CartIcon />
         </div>
+        <CartDropdown />
       </div>
       <Outlet />
     </Fragment>
