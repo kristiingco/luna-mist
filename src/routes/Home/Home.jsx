@@ -26,7 +26,7 @@ const Home = () => {
     },
     {
       id: 5,
-      title: "Sunscreen",
+      title: "Sunscreens",
       imageUrl: "https://m.media-amazon.com/images/I/31gK4s1-otL.jpg",
     },
   ];
